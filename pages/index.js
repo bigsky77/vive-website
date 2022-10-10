@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 import jmt from "../public/jmt.jpg"
 import computer from "../public/computer.jpg"
 import photo29 from "../public/photo29.jpg"
-import photo33 from "../public/photo33.jpg"
+import photo35 from "../public/photo35.jpg"
 import Header from "../public/header.js"
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="https://github.com/bigsky77" className={styles.card}>
-            <Image src={photo33} height={700}
+            <Image src={photo35} height={700}
          width={500}/>
           <p>dev</p>
           </a>
