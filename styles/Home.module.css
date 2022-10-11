@@ -115,6 +115,9 @@
   .container {
    width: 100vw;
   }
+  .main{
+     width: 100vw;
+  }
   .title {
      font-size: 7rem;
   }
