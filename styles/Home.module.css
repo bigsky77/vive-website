@@ -112,14 +112,16 @@
 }
 
 @media (max-width: 600px) {
-  .grid {
+  .card {
+     title: 7rem;
+  } 
+   .grid {
     width: 100%;
     flex-direction: column;
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  .card,
   .footer {
     border-color: #222;
   }
