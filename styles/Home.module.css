@@ -92,7 +92,7 @@
 .card:focus,
 .card:active {
   color: #CD955C;
-  border-color: #CD955C;
+  border-color: #CD5C5C;
 }
 
 .card h2 {
@@ -114,7 +114,10 @@
 @media (max-width: 600px) {
   .title {
      font-size: 7rem;
-  } 
+  }
+  .description {
+     font-size: 1.5rem;
+  }
    .grid {
     width: 100%;
     flex-direction: column;
