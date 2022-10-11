@@ -112,6 +112,9 @@
 }
 
 @media (max-width: 600px) {
+  .main {
+     padding: 0.5rem 0;
+  }
   .title {
      font-size: 7rem;
   }
