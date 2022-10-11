@@ -78,7 +78,7 @@
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
-  color: #CD5C5C;
+  color: #CD955C;
   text-decoration: none;
   border: 5px solid #CD955C;
   border-radius: 10px;
@@ -91,7 +91,7 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #CD955C;
+  color: #CD5C5C;
   border-color: #CD5C5C;
 }
 
