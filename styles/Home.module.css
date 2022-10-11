@@ -118,6 +118,7 @@
   .main{
      width: 100vw;
      padding: 0rem;
+     flex: 100%;
   }
   .title {
      font-size: 7rem;
