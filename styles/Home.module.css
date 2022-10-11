@@ -116,7 +116,7 @@
    width: 100vw;
   }
   .main{
-     width: 100vw;
+     width: 100%;
      padding: 0rem;
      flex: 100%;
      border: 0px;
