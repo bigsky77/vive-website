@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
   background-color: #141e24;
+  font-family: "NeueMachine"; 
 }
 
 .footer {
@@ -145,3 +146,8 @@
     filter: invert(1);
   }
 }
+
+@font-face {
+   font-family: "NeueMachine";
+   src: url("../public/NeueMachina-Ultrabold.otf");
+} 
