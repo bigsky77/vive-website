@@ -16,10 +16,10 @@
 .footer {
   display: flex;
   flex: 1;
-  padding: 2rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  color: #CD955C;
 }
 
 .footer a {
@@ -27,6 +27,9 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  font-family: "NeueMachine-light";
+  padding-left: 20rem 0;
+  padding-right: 20rem 0;
 }
 
 .title a {
@@ -159,4 +162,26 @@
    font-family: "NeueMachine-light";
    src: url("../public/NeueMachina-Light.otf");
 } 
+
+.text {
+  font-size: 20px;
+  font: "Machina";
+  color: #F5F5F5;
+  display: inline;
+}
+
+.blog {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F5F5;
+}
+
+
+
+
 
