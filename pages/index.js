@@ -14,7 +14,7 @@ export default function Home() {
       <Head>
         <title>BigSky</title>
         <meta name="description" content="" />
-        <link rel="icon" href="/mountain.ico" />
+        <link rel="icon" href="./public/mountain.ico" />
       </Head>
 
       <main className={styles.main}>
