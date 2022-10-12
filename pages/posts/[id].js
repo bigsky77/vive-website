@@ -21,11 +21,13 @@ export async function getStaticPaths() {
 
 export default function Post({ postData }) {
   return (
-    <div className={styles.blog}>
-      <div className={styles.main}>
-        <h1 className={styles.grid}>{postData.title}</h1>
+    <div className={styles.container}>
+      <div className={styles.blog}>
+        <h1 className={styles.title}>
+         <b>{postData.title}</b>
+        </h1>
         <div className={styles.grid}>
-          {postData.date}
+          <a>{postData.date}</a>
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </div>

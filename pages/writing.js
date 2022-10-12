@@ -1,13 +1,14 @@
+import Link from "next/link";
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import jmt from "../public/jmt.jpg"
-import computer from "../public/computer.jpg"
 import photo29 from "../public/photo29.jpg"
-import photo35 from "../public/photo35.jpg"
+import photo5 from "../public/photo5.jpg"
+import photo3 from "../public/photo3.jpg"
 import Header from "../public/header.js"
 import Notes from "./notes.js"
-import Writing from "./writing.js"
+
+const ref = 'refrences';
 
 export default function Home() {
   return (
@@ -20,30 +21,33 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          <a>BigSky</a>
+          <a>writing</a>
         </h1>
 
         <p className={styles.description}>
-          cairo, virtual machines, rust 
+         "The trees that grow in my own country 
+         <br></br>
+         Are the beech tree and the yew;
+         <br></br>
+         Many stand together
+         <br></br>
+         And some stand few."
         </p>
 
         <div className={styles.grid}>
-          <a href="https://github.com/bigsky77" className={styles.card}>
-            <Image src={photo35} height={700}
+          <a href="/notes" className={styles.card}>
+            <Image src={photo3} height={500}
          width={500}/>
-          <p>dev</p>
+          <p>technology</p>
           </a>
-
-          <a href="/writing" className={styles.card}>
-            <Header/>
-            <p>writing</p>
-          </a>
-
-          <a href="https://twitter.com/BigSky_7" className={styles.card}>
-            <Image src={photo29} height={700}
+         
+         <Link href={`./posts/${ref}`}>
+          <a href='posts/${ref}' className={styles.card}>
+            <Image src={photo5} height={500}
          width={500}/>
-            <p>social</p>
+            <p>refrences</p>
           </a>
+         </Link>
 
          </div>
       </main>
