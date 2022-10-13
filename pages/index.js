@@ -42,7 +42,7 @@ export default function Home() {
           <a href="https://twitter.com/BigSky_7" className={styles.card}>
             <Image src={photo29} height={700}
          width={500}/>
-            <p>social</p>
+            <p>social </p>
           </a>
 
          </div>
