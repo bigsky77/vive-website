@@ -79,7 +79,7 @@ title: Refrences
 2. [My history with forth stack machines](http://yosefk.com/blog/my-history-with-forth-stack-machines.html)
 3. [1xforth Interview with Charles Moore](http://www.ultratechnology.com/1xforth.htm)
 
-## Computers
+## Software
 
 1. [NextTest - Tokio deep dive](https://sunshowers.io/posts/nextest-and-tokio-1/)
 2. [Cognitive Loads in Programming](https://rpeszek.github.io/posts/2022-08-30-code-cognitiveload.html)
@@ -87,6 +87,7 @@ title: Refrences
 4. [How to Deal with Money in Software](https://cs-syd.eu/posts/2022-08-22-how-to-deal-with-money-in-software)
 5. [Index of Refrences](http://worrydream.com/refs/)
 6. [Learn Every Language](https://blog.bradfieldcs.com/in-2017-learn-every-language-59b11f68eee)
+7. [Midnight Commander](https://midnight-commander.org/)
 
 ## Finance 
 1. [Understanding the Role of Debt in the Financial System](https://www.bis.org/publ/work479.pdf)

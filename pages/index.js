@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from "next/link";
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import jmt from "../public/jmt.jpg"
@@ -33,16 +34,18 @@ export default function Home() {
          width={500}/>
           <p>dev</p>
           </a>
-
-          <a href="/writing" className={styles.card}>
+         
+         <Link href="/writing">
+          <a className={styles.card}>
             <Header/>
             <p>writing</p>
           </a>
+         </Link>
 
           <a href="https://twitter.com/BigSky_7" className={styles.card}>
             <Image src={photo29} height={700}
          width={500}/>
-            <p>social </p>
+            <p>social</p>
           </a>
 
          </div>
