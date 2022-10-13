@@ -163,6 +163,7 @@
    text-align: left;
    object-fit: fill;
    flex-wrap: wrap;
+   flex: 100%;
   }
 }
 
