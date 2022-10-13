@@ -160,7 +160,8 @@
   .blog {
    margin: 0;
    padding: 1rem;
-   text-align: center;
+   text-align: left;
+   object-fit: fill;
   }
 }
 
