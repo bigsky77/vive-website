@@ -26,9 +26,6 @@ export default function Post({ postData }) {
         <h1 className={styles.title}>
          <b>{postData.title}</b>
         </h1>
-        <div className={styles.grid}>
-          <a>{postData.date}</a>
-        </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </div>
     </div>
