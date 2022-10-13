@@ -22,14 +22,12 @@ export async function getStaticPaths() {
 export default function Post({ postData }) {
   return (
     <div className={styles.container}>
-      <div className={styles.main}>
       <div className={styles.blog}>
         <h1 className={styles.title}>
          <b>{postData.title}</b>
         </h1>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </div>
-     </div>
     </div>
   );
 }
