@@ -137,7 +137,7 @@
 
 @media (max-width: 600px) {
   .container {
-   width: 100vw;
+   width: 100%;
    padding: 0rem;
   }
   .main{
