@@ -100,6 +100,8 @@ title: Refrences
 2. [The Verifiable Computing Stack](https://www.guiltygyoza.xyz/2022/05/verifiable-computing-stack)
 3. [Ingonyama](https://www.ingonyama.com/)
 4. [F4PGA](https://f4pga.readthedocs.io/en/latest/how.html)
+5. [Corporate Finance](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/corpfin.html)
+6. [Valuation](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/equity.html)
 
 ## Vim
 1. [VIM AFTER 11 YEARS](https://blog.langworth.com/vim)
