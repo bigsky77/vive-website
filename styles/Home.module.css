@@ -159,7 +159,8 @@
   }
 
   .blog {
-     width: 100%;
+     width: 100vw;
+     padding: 1rem;
      flex-direction: column;
   }
 }
