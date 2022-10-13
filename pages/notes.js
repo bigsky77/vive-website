@@ -26,9 +26,8 @@ export default function Home({ allPostsData }) {
               <Link href={`./posts/${id}`}>
                 <a className={styles.description}>{title}</a>
               </Link>
-              <br />
+              <br/>
               <span>
-                {date}
               </span>
             </li>
           ))}

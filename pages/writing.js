@@ -2,9 +2,8 @@ import Link from "next/link";
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import photo29 from "../public/photo29.jpg"
-import photo5 from "../public/photo5.jpg"
-import photo3 from "../public/photo3.jpg"
+import photo36 from "../public/photo36.jpg"
+import photo38 from "../public/photo38.jpg"
 import Header from "../public/header.js"
 import Notes from "./notes.js"
 
@@ -25,25 +24,18 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-         "The trees that grow in my own country 
-         <br></br>
-         Are the beech tree and the yew;
-         <br></br>
-         Many stand together
-         <br></br>
-         And some stand few."
         </p>
 
         <div className={styles.grid}>
           <a href="/notes" className={styles.card}>
-            <Image src={photo3} height={500}
+            <Image src={photo38} height={700}
          width={500}/>
           <p>technology</p>
           </a>
          
          <Link href={`./posts/${ref}`}>
           <a href='posts/${ref}' className={styles.card}>
-            <Image src={photo5} height={500}
+            <Image src={photo36} height={700}
          width={500}/>
             <p>refrences</p>
           </a>

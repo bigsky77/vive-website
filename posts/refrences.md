@@ -3,8 +3,6 @@ title: Refrences
 ---
 ==========================================================
 
-
-
 ## Math
 1. [Deconstructing Bezier Curves](http://blog.pkh.me/p/33-deconstructing-be%CC%81zier-curves.html)  
 2. [Anatomy of a STARK](https://aszepieniec.github.io/stark-anatomy/) 
