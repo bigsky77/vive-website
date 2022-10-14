@@ -46,7 +46,7 @@
 }
 
 .title b {
-  font-size: 6rem;
+  font-size: 3rem;
   color: #CD955C;
 }
 
@@ -151,13 +151,19 @@
   }
 
   .title {
-     font-size: 6rem;
+     font-size: 5rem;
      padding: 1rem;
+  }
+
+  .title a {
+     font-size: 5rem;
+     padding: 2rem;
   }
 
   .title b {
      font-size: 3rem;
-     padding: 0rem;
+     padding: 1rem;
+     line-height: 15px;
   }
 
   .description {
@@ -217,6 +223,7 @@
 		max-width: 980px;
 		margin: 0 auto;
 		padding: 15px;
+    min-height: 100vh;
 }
 
 
