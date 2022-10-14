@@ -32,6 +32,9 @@ title: Refrences
 26. [A Simple Range Proof From Polynomial Commitments](https://hackmd.io/@dabo/B1U4kx8XI)
 27. [Why the Degree of Regularity Alone is Bad for Estimating Security – a Counter Example to Common Arguments](https://jfs.sh/blog/dreg-insufficient-for-security/)
 28. [Summation Notation](http://www.columbia.edu/itc/sipa/math/summation.html)
+29. [Information Theoretic Proof Systems](https://zkproof.org/2020/08/12/information-theoretic-proof-systems/)
+30. [Plonk!](https://eprint.iacr.org/2019/953.pdf)
+31. [Positive - Larry Gonick](https://web.archive.org/web/20120722015436/http://theory.cs.uchicago.edu/merlin/)
 
 ## Art
 
@@ -39,6 +42,7 @@ title: Refrences
 2. [Vagabond Mexico](https://skiphuntphoto.com/vagabond-mexico-2009)
 3. [My Own Country](https://www.oxfordlieder.co.uk/song/3576)
 4. [The South Country](https://www.bartleby.com/103/72.html)
+5. [Freedom FIghter - Era](https://www.youtube.com/watch?v=VEfCh6ltZck)
 
 ## Political Philosophy
 
