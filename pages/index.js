@@ -6,6 +6,7 @@ import jmt from "../public/jmt.jpg"
 import computer from "../public/computer.jpg"
 import photo29 from "../public/photo29.jpg"
 import photo35 from "../public/photo35.jpg"
+import photo3 from "../public/photo3.jpg"
 import Header from "../public/header.js"
 import Notes from "./notes.js"
 import Writing from "./writing.js"
@@ -15,7 +16,11 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>BigSky</title>
-        <meta name="description" content="" />
+          <meta name="description" content="" />
+          <meta property="og:type" content="website"/>
+          <meta property="og:url" content="www.bigsky.gg"/>
+          <meta property="og:title" content="Dope Software"/>
+          <meta property="og:image" content="./public/photo3.jpg"/>
         <link rel="icon" href="./public/favicon.ico" />
       </Head>
 
