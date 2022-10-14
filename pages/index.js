@@ -37,7 +37,7 @@ export default function Home() {
           <a href="https://github.com/bigsky77" className={styles.card}>
             <Image src={photo35} height={700}
          width={500}/>
-          <p>dev</p>
+          <p>software</p>
           </a>
          
          <Link href="/writing">

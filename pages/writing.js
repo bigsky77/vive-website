@@ -24,6 +24,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
+        an offensive and defensive weapon against the enemy
         </p>
 
         <div className={styles.grid}>
