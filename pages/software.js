@@ -7,7 +7,7 @@ import photo27 from "../public/photo27.jpg"
 import photo39 from "../public/photo39.jpg"
 import photo40 from "../public/photo40.jpg"
 import photo41 from "../public/photo41.jpg"
-import snake from "../public/snake.jpg"
+import snake from "../public/snake2.jpg"
 
 export default function Home() {
   return (
@@ -25,7 +25,9 @@ export default function Home() {
          width={500}/>
           <p>hyperion</p>
           <br></br>
-          <p>stable coin AMM -written in cario</p>
+          <p>stable coin AMM</p>
+          <br></br>
+          <p>cairo</p>
           </b>
          
          <Link href="https://github.com/bigsky77/tempest">
@@ -34,7 +36,9 @@ export default function Home() {
          width={500}/>
             <p>tempest</p>
             <br></br>
-            <p>xyk AMM - written in cairo</p>
+            <p>AMM</p>
+            <br></br>
+            <p>cairo</p>
           </b>
          </Link>
 
@@ -43,7 +47,9 @@ export default function Home() {
          width={500}/>
             <p>darkstar</p>
             <br></br>
-            <p>solidity staking model</p>
+            <p>staking model</p>
+            <br></br>
+            <p>solidity</p>
           </b>
          </div>
 
@@ -53,7 +59,9 @@ export default function Home() {
          width={500}/>
             <p>joy-game</p>
             <br></br>
-            <p>cli adventure game written in javascript</p>
+            <p>cli adventure game</p>
+            <br></br>
+            <p>javascript</p>
           </b>
           
           <b href="https://github.com/bigsky77/ajax" className={styles.card}>
@@ -61,7 +69,9 @@ export default function Home() {
          width={500}/>
             <p>ajax</p>
             <br></br>
-            <p>starknet adventure game written in rust and cairo</p>
+             <p>starkware adventure game</p>
+            <br></br>
+            <p>rust and cairo</p>
           </b>
          </div>
 
