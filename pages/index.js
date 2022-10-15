@@ -2,8 +2,6 @@ import Head from 'next/head'
 import Link from "next/link";
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import jmt from "../public/jmt.jpg"
-import computer from "../public/computer.jpg"
 import photo29 from "../public/photo29.jpg"
 import photo35 from "../public/photo35.jpg"
 import photo3 from "../public/photo3.jpg"
@@ -30,7 +28,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          cairo, virtual machines, rust 
+        zero-knowledge
         </p>
 
         <div className={styles.grid}>
