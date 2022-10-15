@@ -34,7 +34,7 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="https://github.com/bigsky77" className={styles.card}>
+          <a href="/software" className={styles.card}>
             <Image src={photo35} height={700}
          width={500}/>
           <p>software</p>

@@ -87,7 +87,7 @@
 }
 
 .grid b {
-  display: flex;
+  display: wrap;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
