@@ -34,11 +34,14 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="/software" className={styles.card}>
+        
+        <Link href="/software">
+        <a className={styles.card}>
             <Image src={photo35} height={700}
          width={500}/>
           <p>software</p>
           </a>
+        </Link>
          
          <Link href="/writing">
           <a className={styles.card}>
