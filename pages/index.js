@@ -28,9 +28,9 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-        <b>building legendary technologies</b>
+        <b>building legendary technologies across</b>
         <br></br>
-        <b>across crypto, finance, and zero-knowledge</b>
+        <b>crypto, finance, and zero-knowledge</b>
         </p>
 
         <div className={styles.grid}>
@@ -60,7 +60,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-      <a className={styles.footer}>built with 💀 in 🇨🇴 and 🇺🇸</a>      
+      <a className={styles.footer}>designed with 💀 in 🇨🇴 and 🇺🇸</a>      
       </footer>
     </div>
   )
