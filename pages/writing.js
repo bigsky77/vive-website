@@ -28,7 +28,7 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-         <Link href={'./notes'}>
+         <Link href={''}>
           <a className={styles.card}>
             <Image src={photo38} height={700}
          width={500}/>

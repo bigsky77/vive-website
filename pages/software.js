@@ -20,9 +20,11 @@ export default function Home() {
     
         <Image src={photo42} height={600} width={600}/>
         <div className={styles.grid}>
-          <b href="https://github.com/bigsky77/hyperion" className={styles.card}>
-          <p>hyperion</p>
+          <Link href="https://github.com/bigsky77/hyperion">
+           <b className={styles.card}>
+           <p>hyperion</p>
           </b>
+          </Link>
          
          <Link href="https://github.com/bigsky77/tempest">
           <b className={styles.card}>
@@ -30,19 +32,26 @@ export default function Home() {
           </b>
          </Link>
 
-          <b href="https://github.com/bigsky77/dark_star" className={styles.card}>
+          <Link href="https://github.com/bigsky77/dark_star">
+          <b className={styles.card}>
             <p>darkstar</p>
           </b>
+         </Link>
          </div>
 
          <div className={styles.grid}>
-          <b href="https://github.com/bigsky77/joy-game" className={styles.card}>
+          <Link href="https://github.com/bigsky77/joy-game">
+          <b className={styles.card}>
             <p>joy-game</p>
           </b>
+          </Link>
           
-          <b href="https://github.com/bigsky77/ajax" className={styles.card}>
+          <Link href="https://github.com/bigsky77/ajax">
+          <b className={styles.card}>
             <p>ajax</p>
           </b>
+          </Link>
+
          </div>
 
       </main>

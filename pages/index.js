@@ -2,8 +2,8 @@ import Head from 'next/head'
 import Link from "next/link";
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import photo29 from "../public/photo29.jpg"
 import photo35 from "../public/photo35.jpg"
+import photo42 from "../public/photo42.png"
 import photo3 from "../public/photo3.jpg"
 import Header from "../public/header.js"
 import Notes from "./notes.js"
@@ -28,12 +28,14 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-        zero-knowledge
+        <b>building the world's finest systems</b>
+        <br></br>
+        <b>in crypto, finance, and technology</b>
         </p>
 
         <div className={styles.grid}>
         
-        <Link href="/software">
+        <Link href="https://github.com/bigsky77">
         <a className={styles.card}>
             <Image src={photo35} height={700}
          width={500}/>
@@ -49,7 +51,7 @@ export default function Home() {
          </Link>
 
           <a href="https://twitter.com/BigSky_7" className={styles.card}>
-            <Image src={photo29} height={700}
+            <Image src={photo42} height={700}
          width={500}/>
             <p>social</p>
           </a>
