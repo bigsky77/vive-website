@@ -28,9 +28,9 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-        <b>building the world's finest systems</b>
+        <b>building the world-class technologies</b>
         <br></br>
-        <b>in crypto, finance, and technology</b>
+        <b>in crypto, finance, and zero-knowledge</b>
         </p>
 
         <div className={styles.grid}>
