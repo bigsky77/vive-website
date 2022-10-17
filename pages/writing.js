@@ -38,7 +38,7 @@ export default function Home() {
           <a href='posts/${ref}' className={styles.card}>
             <Image src={photo36} height={700}
          width={500}/>
-            <p>refrences</p>
+            <p>references</p>
           </a>
          </Link>
 
