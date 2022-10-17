@@ -34,7 +34,7 @@ import photo33 from './photo33.jpg';
 import photo34 from './photo34.jpg';
 
 let images = [photo12, photo12]
-let landscapes = [photo11, photo5, photo11, photo5]
+let landscapes = [photo12, photo11, photo5, photo11, photo5]
 let hero = [photo8, photo8, photo8]
 
 function Header() {

@@ -28,9 +28,9 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-        <b>building legendary technologies across</b>
+        <b>building legendary technology</b>
         <br></br>
-        <b>crypto, finance, and zero-knowledge</b>
+        <b>for a limitless future</b>
         </p>
 
         <div className={styles.grid}>
