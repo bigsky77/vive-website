@@ -50,24 +50,14 @@ export default function Home() {
             <p>writing</p>
           </a>
          </Link>
-        
-        </div>
 
-        <div className={styles.grid}>
-          <Link href="/arcade">
-            <a className={styles.card}>
-              <Image src={photo43} height={700} width={500}/>
-                <p>play</p>
-            </a>
-          </Link>
-
-          <a href="https://twitter.com/BigSky_7" className={styles.card}>
+              <a href="https://twitter.com/BigSky_7" className={styles.card}>
             <Image src={photo42} height={700}
          width={500}/>
             <p>social</p>
           </a>
 
-         </div>
+        </div>
       </main>
 
       <footer className={styles.footer}>

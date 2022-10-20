@@ -29,7 +29,6 @@ export default function Game() {
     keys[ev.key]=true;
     gameState();
   }
-
   
   function gameState() {
 
@@ -74,7 +73,7 @@ export default function Game() {
  
   return(
     <div>
-      <div className={styles.car} style={{top: x + 'px', left: y + 'px', backgroundColor: color }}></div>
+      <div className={styles.car} style={{top: x + 'px', left: y + 'px', backgroundColor: color }}>🏎</div>
     </div>
   );
 
