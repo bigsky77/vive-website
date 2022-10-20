@@ -238,8 +238,42 @@
     min-height: 100vh;
 }
 
+.blank {
 
+}
 
+.GameArea{
+    width: 300px;
+    height: 800px;
+    background-color: rgb(29, 26, 26);
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-left: 7px solid white;
+    border-right: 7px solid white;
+}
 
+.car {
+    width: 100px;
+    height: 70px;
+    background-color: #CD5C5C;
+    position: absolute;
+    bottom: 120px;
+    background-size: cover;
+    top: 50px;
+    left: 20px;
+    border: 10px red;
+} 
 
-
+.block {
+    width: 100px;
+    height: 70px;
+    background-color: gold;
+    border: 10px white;
+    color: white;
+    position: absolute;
+    bottom: 120px;
+    background-size: cover;
+    top: 50px;
+    left: 20px;
+}

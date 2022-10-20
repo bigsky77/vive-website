@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.11",
+    "ethers": "^5.7.2",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "marked": "^4.1.1",
@@ -20,7 +22,8 @@
     "react-dom": "18.2.0",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
-    "unified": "^10.1.2"
+    "unified": "^10.1.2",
+    "web3-react": "^5.0.5"
   },
   "devDependencies": {
     "eslint": "8.25.0",

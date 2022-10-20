@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import photo35 from "../public/photo35.jpg"
 import photo42 from "../public/photo42.png"
+import photo43 from "../public/photo43.jpg"
 import photo3 from "../public/photo3.jpg"
 import Header from "../public/header.js"
 import Notes from "./notes.js"
@@ -49,6 +50,16 @@ export default function Home() {
             <p>writing</p>
           </a>
          </Link>
+        
+        </div>
+
+        <div className={styles.grid}>
+          <Link href="/arcade">
+            <a className={styles.card}>
+              <Image src={photo43} height={700} width={500}/>
+                <p>play</p>
+            </a>
+          </Link>
 
           <a href="https://twitter.com/BigSky_7" className={styles.card}>
             <Image src={photo42} height={700}
