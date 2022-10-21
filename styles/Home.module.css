@@ -263,12 +263,17 @@
     top: 50px;
     left: 20px;
     border: 10px red;
+    text-align: center;
+    font-size: 4rem;
+    display: block;
 } 
 
 .block {
     width: 100px;
+    text-align: center;
+    font-size: 4rem;
     height: 70px;
-    background-color: gold;
+    background-color: none;
     border: 10px white;
     color: white;
     position: absolute;
@@ -276,4 +281,5 @@
     background-size: cover;
     top: 50px;
     left: 20px;
+    display: block;
 }
