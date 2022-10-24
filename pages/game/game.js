@@ -2,19 +2,16 @@ import Player from './player.js'
 import Canvas from './blocks.js'
 import { Component, useRef, useEffect, useState } from "react";
 
-class Game extends Component {
+const Game = (props) => {
 
-  showCanvas = () => {
-      return <h1>hello</h1> 
-  };
-
-  render() {
-    return (<div>
-      <h1>{showCanvas()}</h1>
-    </div>
+    return (
+      <div>
+        <h1></h1>
+        <Canvas/>
+        <Player/>
+      </div>
   );
-  }
-
 }
 
 export default Game
+

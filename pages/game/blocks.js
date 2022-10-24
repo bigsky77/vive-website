@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react'
+import Game from './game.js'
 
 const Canvas = props => {
   
@@ -16,7 +17,8 @@ const Canvas = props => {
   }
   
   const update = () => {
-    if(rectY > 600){
+    if(rectY > 200){
+      rectX = Math.floor(Math.random() * 300);
       rectY = 0;
     } else {
       rectY += 1;
@@ -44,7 +46,11 @@ const Canvas = props => {
     }
   }, [draw])
   
-  return <canvas ref={canvasRef} {...props} style={{width: '100%', height: '100%'}}></canvas>
+  return (
+    <div>
+      <canvas ref={canvasRef} {...props} style={{width: '300px', height: '800px'}}></canvas>
+    </div>
+  );
 }
 
 export default Canvas

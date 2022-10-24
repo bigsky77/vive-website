@@ -2,8 +2,9 @@ import styles from '../styles/Home.module.css'
 import {ethers} from 'ethers'
 import { StrictMode, useRef, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-import {Game} from "./game/game.js";
+import Game from "./game/game.js";
 import Player from "./game/player.js";
+import Canvas from "./game/blocks.js"
 
 export function ConnectWallet() {  
   const [result, showResult] = useState(false);
@@ -37,7 +38,7 @@ export default function Home() {
     <div className={styles.container}>
       <ConnectWallet/>
       <div className={styles.GameArea}>
-       <button onClick={Game}>CLICK</button> 
+        <Game/>
       </div>
     </div>
   )

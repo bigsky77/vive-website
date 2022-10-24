@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import styles from '../../styles/Home.module.css'
 
-export default function Player() {
+const Player = (props) => {
   let keys={ArrowUp: false, ArrowDown: false, ArrowRight: false, ArrowLeft: false, Shift: false, Enter: false};
 
   const player={speed: 5, score: 0};
@@ -73,3 +73,5 @@ export default function Player() {
   }
       return <div className={styles.car} style={{top: x + 'px', left: y + 'px', display: gameDisplay}}>🚀</div>
 }
+
+export default Player
