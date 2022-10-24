@@ -44,7 +44,7 @@ export default function Home() {
           </a>
         </Link>
          
-         <Link href="/writing">
+         <Link href="/arcade">
           <a className={styles.card}>
             <Header/>
             <p>writing</p>

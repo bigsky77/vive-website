@@ -2,7 +2,8 @@ import styles from '../styles/Home.module.css'
 import {ethers} from 'ethers'
 import { StrictMode, useRef, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-import Game from "./game/game.js";
+import {Game} from "./game/game.js";
+import Player from "./game/player.js";
 
 export function ConnectWallet() {  
   const [result, showResult] = useState(false);
@@ -25,27 +26,18 @@ export function ConnectWallet() {
     <div>
       <button className={styles.card} onClick={connectMetamask} style={{fontSize: '1.33rem'}}>
           connect wallet 🏆
-      { result ? <Result/> : null}
       </button>
     </div>
   )
-}
-
-export function Result(){
-    <div>
-      <Game/>
-    </div>
 }
 
 export default function Home() {  
 
   return (
     <div className={styles.container}>
-      <div className={styles.main}>
-        <ConnectWallet/>
-      <div className={styles.GameArea}> 
-        <Game/>
-        </div>
+      <ConnectWallet/>
+      <div className={styles.GameArea}>
+       <button onClick={Game}>CLICK</button> 
       </div>
     </div>
   )
