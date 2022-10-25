@@ -1,10 +1,11 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import Game from './game.js'
+import Player from './player.js'
 
-const Canvas = props => {
+const Canvas = (props) => {
   
-  let rectX = 0;
-  let rectY = 0;
+  let [x, updateX] = useState(0) 
+  let [y, updateY] = useState(0) 
 
   const canvasRef = useRef(null)
   
@@ -12,16 +13,18 @@ const Canvas = props => {
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
     ctx.fillStyle = '#CD5C5C'
     ctx.beginPath()
-    ctx.fillRect(rectX, rectY, 50, 10)
+    ctx.fillRect(x, y, 50, 10)
     ctx.fill()
   }
   
   const update = () => {
-    if(rectY > 200){
-      rectX = Math.floor(Math.random() * 300);
-      rectY = 0;
+    if(y > 130){
+      let rectX = Math.floor(Math.random() * 250);
+      updateX(rectX)
+      updateY(0);
     } else {
-      rectY += 1;
+      let num = y + 0.005;
+      updateY(num)
     } 
   }
 
@@ -49,6 +52,7 @@ const Canvas = props => {
   return (
     <div>
       <canvas ref={canvasRef} {...props} style={{width: '300px', height: '800px'}}></canvas>
+      <Player/>
     </div>
   );
 }

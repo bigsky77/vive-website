@@ -1,6 +1,8 @@
 import { useRef, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import styles from '../../styles/Home.module.css'
+import Canvas from './blocks.js'
+import Game from './game.js'
 
 const Player = (props) => {
   let keys={ArrowUp: false, ArrowDown: false, ArrowRight: false, ArrowLeft: false, Shift: false, Enter: false};
@@ -10,8 +12,6 @@ const Player = (props) => {
   
   let [x, updateX] = useState(700);
   let [y, updateY] = useState(100);
-  let [isStopped, updateIsStopped] = useState(0);
-  let [gameDisplay, updateGameDisplay] = useState('block');
  
   useEffect(() => {
     console.log(ref.current)
@@ -31,7 +31,7 @@ const Player = (props) => {
     gameState();
   }
   
-  function gameState() {
+   function gameState() {
  
       if(keys.ArrowUp){
         if(x >= 700){
@@ -71,7 +71,12 @@ const Player = (props) => {
            }
         }
   }
-      return <div className={styles.car} style={{top: x + 'px', left: y + 'px', display: gameDisplay}}>🚀</div>
+
+      return( 
+        <div>
+          <div className={styles.car} style={{top: x + 'px', left: y + 'px'}}>🚀</div>
+        </div>
+      )
 }
 
 export default Player
