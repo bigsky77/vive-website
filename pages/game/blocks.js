@@ -52,7 +52,7 @@ const Canvas = (props) => {
   return (
     <div>
       <canvas ref={canvasRef} {...props} style={{width: '300px', height: '800px'}}></canvas>
-      <Player/>
+      <Player blockX={x} blockY={y} endGame={endGame}/>
     </div>
   );
 }

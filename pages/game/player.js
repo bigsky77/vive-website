@@ -70,11 +70,22 @@ const Player = (props) => {
           updateY(y)
            }
         }
-  }
+    
+     checkCollide()
+   }
+
+  let gameOver = false;
+    
+   function checkCollide() {
+     if(x == props.blockX && y == props.blockY){
+           gameOver == true;
+     } 
+   }
 
       return( 
         <div>
           <div className={styles.car} style={{top: x + 'px', left: y + 'px'}}>🚀</div>
+          <div endGame(gameOver, event)/>
         </div>
       )
 }
