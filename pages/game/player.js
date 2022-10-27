@@ -12,18 +12,14 @@ const Player = (props) => {
   
   let [x, updateX] = useState(100);
   let [y, updateY] = useState(700);
+  let [score, updateScore] = useState(0);
  
   useEffect(() => {
     console.log(ref.current)
     window.addEventListener('keydown',keyDown);
     window.addEventListener('keyup',keyUp);
-      
-      const interval = setInterval(() => {
-          checkCollide();
-      }, 0.001)
-        return () => clearInterval(interval);
-
-      }, [])
+    checkCollide(); 
+  }, [props.blockY, props.blockX], props.emoji)
 
   function keyUp(ev) {
     ev.preventDefault();
@@ -77,22 +73,36 @@ const Player = (props) => {
            }
         }
 
-        checkCollide();
    }
 
     function checkCollide() {
-      if (x == props.blockX && y == props.blockY){
-        props.endGame();
+      if (
+        x == props.blockX && 
+        y == props.blockY &&
+        props.emoji == 0
+      ){
+        props.endGame({score});
+      } else if(
+        x == props.blockX && 
+        y == props.blockY &&
+        props.emoji == 1
+      ){
+        score+=5
+        updateScore(score)
+      } else if(
+        x == props.blockX && 
+        y == props.blockY &&
+        props.emoji == 2
+      ){
+        score+=10
+        updateScore(score)
       }
     }
 
       return( 
         <div>
-        <h1>x={x} y={y}</h1>
-        <h1>bx={props.blockX} by={props.blockY}</h1>
-        <div>
           <div className={styles.car} style={{top: y + 'px', left: x + 'px'}}>🚀</div>
-        </div>
+          <h1>score={score}</h1>
         </div>
       )
 }

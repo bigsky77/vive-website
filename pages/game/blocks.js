@@ -28,7 +28,7 @@ const Blocks = (props) => {
           blockY+=100
           updateBlockY(blockY);
       }
-    }, 1000) 
+    }, 100) 
 
         return () => clearInterval(intervalId);
   },[])
@@ -36,7 +36,7 @@ const Blocks = (props) => {
     return (
     <div>
       <div className={styles.block} style={{top: blockY + 'px', left: blockX + 'px'}}>{type[emoji]}</div>
-      <Player blockX={blockX} blockY={blockY} endGame={props.endGame}/>
+      <Player blockX={blockX} blockY={blockY} emoji={emoji} endGame={props.endGame}/>
     </div>
   );
 }
