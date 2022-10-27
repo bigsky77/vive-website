@@ -10,14 +10,20 @@ const Player = (props) => {
   const player={speed: 5, score: 0};
   const ref = useRef();
   
-  let [x, updateX] = useState(700);
-  let [y, updateY] = useState(100);
+  let [x, updateX] = useState(100);
+  let [y, updateY] = useState(700);
  
   useEffect(() => {
     console.log(ref.current)
     window.addEventListener('keydown',keyDown);
     window.addEventListener('keyup',keyUp);
-  },[])
+      
+      const interval = setInterval(() => {
+          checkCollide();
+      }, 0.001)
+        return () => clearInterval(interval);
+
+      }, [])
 
   function keyUp(ev) {
     ev.preventDefault();
@@ -31,61 +37,62 @@ const Player = (props) => {
     gameState();
   }
   
-   function gameState() {
+  function gameState() {
  
       if(keys.ArrowUp){
-        if(x >= 700){
-          x == 0
-          updateX(x)
-        } else {
-          x+=100
-          updateX(x)
-        }
-      }
-
-      if(keys.ArrowDown){
-        if(x <= 0){
-          x == 700
-          updateX(x)
-        } else {
-          x-=100
-          updateX(x)
-        }
-      }
-      if(keys.ArrowLeft){
-        if(y >= 200){
+        if(y >= 700){
           y == 0
           updateY(y)
         } else {
           y+=100
           updateY(y)
-        }             
+        }
       }
-      if(keys.ArrowRight){
+
+      if(keys.ArrowDown){
         if(y <= 0){
-          y == 300
+          y == 700
           updateY(y)
         } else {
           y-=100
           updateY(y)
+        }
+      }
+      if(keys.ArrowLeft){
+        if(x >= 200){
+          x == 0
+          updateX(x)
+        } else {
+          x+=100
+          updateX(x)
+        }             
+      }
+      if(keys.ArrowRight){
+        if(x <= 0){
+          x == 300
+          updateX(x)
+        } else {
+          x-=100
+          updateX(x)
            }
         }
-    
-     checkCollide()
+
+        checkCollide();
    }
 
-  let gameOver = false;
-    
-   function checkCollide() {
-     if(x == props.blockX && y == props.blockY){
-           gameOver == true;
-     } 
-   }
+    function checkCollide() {
+      if (x == props.blockX && y == props.blockY){
+        props.endGame();
+      }
+    }
 
       return( 
         <div>
-          <div className={styles.car} style={{top: x + 'px', left: y + 'px'}}>🚀</div>
-          <div endGame(gameOver, event)/>
+        <h1>x={x} y={y}</h1>
+        <h1>bx={props.blockX} by={props.blockY}</h1>
+        <div>
+          <div className={styles.car} style={{top: y + 'px', left: x + 'px'}}>🚀</div>
+        </div>
         </div>
       )
 }

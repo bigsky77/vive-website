@@ -259,6 +259,7 @@
     position: absolute;
     bottom: 120px;
     background-size: cover;
+    background-color: '';
     top: 50px;
     left: 20px;
     border: 10px red;
