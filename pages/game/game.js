@@ -15,19 +15,24 @@ const Game = (props) => {
       updateScore(score)
     };
 
+    const mintNFT = (props) => {
+
+    }
+
     if(gameOver == true){
       return (
         <div>
         <h1>Game Over</h1>
             <Image src={high} height={300} width={200}/>
           <p>score={score}</p>
-        </div>
+       </div>
       );
     }
 
       return (
         <div>
-          <Blocks endGame={endGame}/>
+        <h1>{score}</h1>
+        {Array(1).fill(<Blocks endGame={endGame} updateScore={updateScore}/>)}
         </div>
       );
 }

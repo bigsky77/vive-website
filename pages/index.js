@@ -61,7 +61,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-      <a className={styles.footer}>designed with 💀 in 🇨🇴 and 🇺🇸</a>      
+      <a className={styles.footer}>designed in 🇮🇱, 🇨🇴 and 🇺🇸</a>      
       </footer>
     </div>
   )

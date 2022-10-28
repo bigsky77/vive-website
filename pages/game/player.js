@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import styles from '../../styles/Home.module.css'
-import Canvas from './blocks.js'
+import Blocks from './blocks.js'
 import Game from './game.js'
 
 const Player = (props) => {
@@ -88,21 +88,20 @@ const Player = (props) => {
         props.emoji == 1
       ){
         score+=5
-        updateScore(score)
+        props.updateScore(score)
       } else if(
         x == props.blockX && 
         y == props.blockY &&
         props.emoji == 2
       ){
         score+=10
-        updateScore(score)
+        props.updateScore(score)
       }
     }
 
       return( 
         <div>
           <div className={styles.car} style={{top: y + 'px', left: x + 'px'}}>🚀</div>
-          <h1>score={score}</h1>
         </div>
       )
 }
