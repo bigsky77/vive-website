@@ -88,19 +88,20 @@ const Player = (props) => {
         props.emoji == 1
       ){
         score+=5
-        props.updateScore(score)
+        updateScore(score)
       } else if(
         x == props.blockX && 
         y == props.blockY &&
         props.emoji == 2
       ){
         score+=10
-        props.updateScore(score)
+        updateScore(score)
       }
     }
 
       return( 
         <div>
+          <h1>score = {score}</h1>
           <div className={styles.car} style={{top: y + 'px', left: x + 'px'}}>🚀</div>
         </div>
       )

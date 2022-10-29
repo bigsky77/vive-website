@@ -4,7 +4,6 @@ import { StrictMode, useRef, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import Game from "./game/game.js";
 import Player from "./game/player.js";
-import Canvas from "./game/blocks.js"
 
 export function ConnectWallet() {  
   const [result, showResult] = useState(false);

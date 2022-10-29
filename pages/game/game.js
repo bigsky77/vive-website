@@ -31,11 +31,8 @@ const Game = (props) => {
 
       return (
         <div>
-        <h1>{score}</h1>
         {Array(1).fill(<Blocks endGame={endGame} updateScore={updateScore}/>)}
-        </div>
-      );
-}
+        </div>); }
 
 export default Game
 
