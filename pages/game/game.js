@@ -10,10 +10,14 @@ const Game = (props) => {
     const [score, updateScore] = useState(0);
     const [player, updatePlayer] = useState({x: 100, y: 700});
 
+    let ref = useRef();
+
+    useEffect(() => {  
+      console.log(ref.current)
+    }, [player.x, player.y])
+
     const endGame = (props) => {
       updateGameOver(true)
-      let score = props.score
-      updateScore(score)
     };
 
     if(gameOver == true){
@@ -28,7 +32,9 @@ const Game = (props) => {
 
     return (
         <div>
-          <Blocks/>
+          <h1>{score}</h1>
+          <Blocks updateScore={updateScore} score={score} player={player} endGame={endGame}/>
+          <Blocks updateScore={updateScore} score={score} player={player} endGame={endGame}/>
           <Player updatePlayer={updatePlayer}/>
         </div>); 
 }

@@ -18,8 +18,7 @@ const Player = (props) => {
     console.log(ref.current)
     window.addEventListener('keydown',keyDown);
     window.addEventListener('keyup',keyUp);
-    checkCollide(); 
-  }, [props.blockY, props.blockX], props.emoji)
+   }, [props.blockY, props.blockX], props.emoji)
 
   function keyUp(ev) {
     ev.preventDefault();
@@ -76,33 +75,8 @@ const Player = (props) => {
       props.updatePlayer({x: x, y: y});
    }
 
-    function checkCollide() {
-      if (
-        x == props.blockX && 
-        y == props.blockY &&
-        props.emoji == 0
-      ){
-        props.endGame({score});
-      } else if(
-        x == props.blockX && 
-        y == props.blockY &&
-        props.emoji == 1
-      ){
-        score+=5
-        updateScore(score)
-      } else if(
-        x == props.blockX && 
-        y == props.blockY &&
-        props.emoji == 2
-      ){
-        score+=10
-        updateScore(score)
-      }
-    }
-
       return( 
         <div>
-          <h1>score = {score}</h1>
           <div className={styles.car} style={{top: y + 'px', left: x + 'px'}}>🚀</div>
         </div>
       )
