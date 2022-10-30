@@ -72,7 +72,8 @@ const Player = (props) => {
           updateX(x)
            }
         }
-
+      
+      props.updatePlayer({x: x, y: y});
    }
 
     function checkCollide() {

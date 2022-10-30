@@ -8,16 +8,13 @@ import high from '../../public/high.jpg'
 const Game = (props) => {
     const [gameOver, updateGameOver] = useState(false);
     const [score, updateScore] = useState(0);
+    const [player, updatePlayer] = useState({x: 100, y: 700});
 
     const endGame = (props) => {
       updateGameOver(true)
       let score = props.score
       updateScore(score)
     };
-
-    const mintNFT = (props) => {
-
-    }
 
     if(gameOver == true){
       return (
@@ -29,10 +26,12 @@ const Game = (props) => {
       );
     }
 
-      return (
+    return (
         <div>
-        {Array(1).fill(<Blocks endGame={endGame} updateScore={updateScore}/>)}
-        </div>); }
+          <Blocks/>
+          <Player updatePlayer={updatePlayer}/>
+        </div>); 
+}
 
 export default Game
 
