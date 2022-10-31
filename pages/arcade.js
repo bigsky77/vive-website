@@ -42,6 +42,9 @@ export default function Home() {
     return (
       <div className={styles.container}>
         <div className={styles.main}>
+              <h1 className={styles.title}>
+              <c>spacerz</c>
+              </h1>
               <div className={styles.GameArea}>
               <Game/>
           </div>

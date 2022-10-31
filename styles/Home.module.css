@@ -52,6 +52,12 @@
   color: #CD955C;
 }
 
+.title c {
+  color: #CD5C5C;
+  text-decoration: none;
+  font-family: "NeueMachine"; 
+}
+
 .title {
   margin: 0;
   line-height: 1.15;
