@@ -33,12 +33,28 @@ export function ConnectWallet() {
 
 export default function Home() {  
 
-  return (
-    <div className={styles.container}>
-      <ConnectWallet/>
-      <div className={styles.GameArea}>
-        <Game/>
+    const [isStart, updateStart] = useState(false);
+  
+    function start() {
+      updateStart(true)
+    }
+
+    return (
+      <div className={styles.container}>
+        <div className={styles.main}>
+              <button className={styles.card} onClick={start} style={{fontSize: '1.33rem'}}>
+                <a>start game</a>
+              </button>
+              <div className={styles.GameArea}>
+                {isStart
+                  ? <Game/>
+                  : null
+                }
+          </div>
+        </div>
+          <footer className={styles.footer}>
+            <a className={styles.footer}>designed in 🇮🇱, 🇨🇴 and 🇺🇸</a>      
+        </footer>
       </div>
-    </div>
-  )
+    );
 }

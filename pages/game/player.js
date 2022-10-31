@@ -11,7 +11,7 @@ const Player = (props) => {
   const ref = useRef();
   
   let [x, updateX] = useState(100);
-  let [y, updateY] = useState(700);
+  let [y, updateY] = useState(200);
   let [score, updateScore] = useState(0);
  
   useEffect(() => {
@@ -35,7 +35,7 @@ const Player = (props) => {
   function gameState() {
  
       if(keys.ArrowUp){
-        if(y >= 700){
+        if(y >= 600){
           y == 0
           updateY(y)
         } else {
@@ -46,7 +46,7 @@ const Player = (props) => {
 
       if(keys.ArrowDown){
         if(y <= 0){
-          y == 700
+          y == 600
           updateY(y)
         } else {
           y-=100
@@ -54,7 +54,7 @@ const Player = (props) => {
         }
       }
       if(keys.ArrowLeft){
-        if(x >= 200){
+        if(x >= 800){
           x == 0
           updateX(x)
         } else {
@@ -64,7 +64,7 @@ const Player = (props) => {
       }
       if(keys.ArrowRight){
         if(x <= 0){
-          x == 300
+          x == 800
           updateX(x)
         } else {
           x-=100

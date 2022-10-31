@@ -4,9 +4,11 @@ import Image from 'next/image'
 import { Component, useRef, useEffect, useState } from "react";
 import Player from './player.js'
 import high from '../../public/high.jpg'
+import Enemy from './enemy.js'
+import Star from './star.js'
 
 const Game = (props) => {
-    const [gameOver, updateGameOver] = useState(false);
+    const [endGame, updateGameOver] = useState(false);
     const [score, updateScore] = useState(0);
     const [player, updatePlayer] = useState({x: 100, y: 700});
 
@@ -14,13 +16,20 @@ const Game = (props) => {
 
     useEffect(() => {  
       console.log(ref.current)
+      checkWin();
     }, [player.x, player.y])
 
-    const endGame = (props) => {
+    const gameOver = (props) => {
       updateGameOver(true)
     };
 
-    if(gameOver == true){
+    const checkWin = () => {
+      if(player.x == 700 && player.y == 300){
+        updateGameOver(true)
+      }
+    }
+ 
+    if(endGame == true){
       return (
         <div>
         <h1>Game Over</h1>
@@ -30,12 +39,25 @@ const Game = (props) => {
       );
     }
 
+    var stars = [];
+    var starX = 0;
+    var starY = 0;
+    
+    for(var j=0; j < 8; j++){
+      starY +=100  
+      stars.push(<Star x={starX} y={starY} playerX={player.x} playerY={player.y} updateScore={updateScore} score={score}/>)
+      for (var i=0; i < 8; i++){
+        starX+=100;
+        stars.push(<Star x={starX} y={starY} playerX={player.x} playerY={player.y} updateScore={updateScore} score={score}/>)
+      }
+    }
+
     return (
         <div>
-          <h1>{score}</h1>
-          <Blocks updateScore={updateScore} score={score} player={player} endGame={endGame}/>
-          <Blocks updateScore={updateScore} score={score} player={player} endGame={endGame}/>
+          <Enemy playerX={player.x} playerY={player.y} gameOver={gameOver}/>
+          {stars}
           <Player updatePlayer={updatePlayer}/>
+          <div className={styles.block} style={{top: 300 + 'px', left: 700 + 'px'}}>🌌</div>
         </div>); 
 }
 
