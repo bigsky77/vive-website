@@ -42,14 +42,8 @@ export default function Home() {
     return (
       <div className={styles.container}>
         <div className={styles.main}>
-              <button className={styles.card} onClick={start} style={{fontSize: '1.33rem'}}>
-                <a>start game</a>
-              </button>
               <div className={styles.GameArea}>
-                {isStart
-                  ? <Game/>
-                  : null
-                }
+              <Game/>
           </div>
         </div>
           <footer className={styles.footer}>

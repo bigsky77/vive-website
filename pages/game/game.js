@@ -39,23 +39,24 @@ const Game = (props) => {
       );
     }
 
-    var stars = [];
-    var starX = 0;
-    var starY = 0;
     
-    for(var j=0; j < 8; j++){
-      starY +=100  
-      stars.push(<Star x={starX} y={starY} playerX={player.x} playerY={player.y} updateScore={updateScore} score={score}/>)
-      for (var i=0; i < 8; i++){
+    const fillStars = () => {
+      var stars = [];
+      var starX = 0;
+      var starY = 0;
+   
+      for(var i=0; i < 8; i++){
         starX+=100;
         stars.push(<Star x={starX} y={starY} playerX={player.x} playerY={player.y} updateScore={updateScore} score={score}/>)
       }
+
+      return stars
     }
 
     return (
         <div>
           <Enemy playerX={player.x} playerY={player.y} gameOver={gameOver}/>
-          {stars}
+          {fillStars()}
           <Player updatePlayer={updatePlayer}/>
           <div className={styles.block} style={{top: 300 + 'px', left: 700 + 'px'}}>🌌</div>
         </div>); 
