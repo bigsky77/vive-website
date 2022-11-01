@@ -177,6 +177,13 @@
   left: 1rem;
 }
 
+.connect:hover,
+.connect:focus,
+.connect:active {
+  color: #CD5C5C;
+  border-color: #CD5C5C;
+}
+
 .logo {
   height: 1em;
   margin-left: 0.5rem;

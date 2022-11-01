@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Game from "./game.js";
 import { StrictMode, useRef, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-import photo48 from "../../public/photo48.jpg"
+import space from "../../public/space.jpg"
 
 const LoadGame = () => {
 
@@ -28,16 +28,14 @@ export default LoadGame
 
 
 const Load = (props) => {
-
-
-
   return(
-    <div>
+      <div>
+        <Image src={space} height={1000} width={1000}/>
       <button className={styles.card} onClick={props.gameStart} style={{backgroundColor: 'white'}}>
         <p>לחץ כדי להתחיל את המשחק</p>
         <p>click to start game</p>
         <p>انقر لبدء اللعبة</p>
       </button>
-    </div>
+      </div>
   );
 }
