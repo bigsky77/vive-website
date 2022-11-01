@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 import Game from "./game/game.js";
 import Player from "./game/player.js";
 
-export function ConnectWallet() {  
+export default function Home() {  
   const [result, showResult] = useState(false);
   
   const connectMetamask = async () => {
@@ -22,17 +22,6 @@ export function ConnectWallet() {
     return library;
   };
 
-  return (
-    <div>
-      <button className={styles.card} onClick={connectMetamask} style={{fontSize: '1.33rem'}}>
-          connect wallet 🏆
-      </button>
-    </div>
-  )
-}
-
-export default function Home() {  
-
     const [isStart, updateStart] = useState(false);
   
     function start() {
@@ -40,21 +29,24 @@ export default function Home() {
     }
 
     return (
-      <div className={styles.container}>
-              <button className={styles.card} style={{fontSize: '1rem', backgroundColor: '#141e24'}}>
-                  <c>connect wallet</c>
+      <div className={styles.container}>    
+          
+          <main className={styles.main}>
+              <button className={styles.connect} style={{fontSize: '1rem', backgroundColor: '#141e24'}} onClick={connectMetamask}>
+                connect wallet
               </button>
-        <div className={styles.main}>
+         
               <h1 className={styles.title}>
-              <c>spacerz</c>
-              </h1>
-              <div className={styles.GameArea}>
-              <Game/>
-          </div>
+                    <a>spacerz</a>
+                  </h1>
+                    <div className={styles.GameArea}>
+                <Game/>
+              </div>
+          </main>
+
           <footer className={styles.footer}>
             <a>designed in 🇮🇱, 🇨🇴 and 🇺🇸</a>      
-        </footer>
-        </div>
+          </footer>
       </div>
     );
 }

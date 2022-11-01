@@ -3,7 +3,7 @@ import styles from '../../styles/Home.module.css'
 import Image from 'next/image'
 import { Component, useRef, useEffect, useState } from "react";
 import Player from './player.js'
-import high from '../../public/high.jpg'
+import photo46 from '../../public/photo47.jpg'
 import Enemy from './enemy.js'
 import Star from './star.js'
 
@@ -32,9 +32,11 @@ const Game = (props) => {
     if(endGame == true){
       return (
         <div>
-        <h1>Game Over</h1>
-            <Image src={high} height={300} width={200}/>
-          <p>score={score}</p>
+        <h1 className={styles.description}>Game Over</h1>
+            <div className={styles.description}>
+              <Image src={photo46} height={350} width={250}/>
+            </div>
+          <p className={styles.description}>score={score}</p>
        </div>
       );
     }
