@@ -3,6 +3,7 @@ import {ethers} from 'ethers'
 import { StrictMode, useRef, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import Game from "./game/game.js";
+import LoadGame from "./game/loadgame.js";
 import Player from "./game/player.js";
 
 export default function Home() {  
@@ -40,7 +41,7 @@ export default function Home() {
                     <a>spacerz</a>
                   </h1>
                     <div className={styles.GameArea}>
-                <Game/>
+                <LoadGame/>
               </div>
           </main>
 
