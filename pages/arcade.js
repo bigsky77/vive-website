@@ -41,6 +41,9 @@ export default function Home() {
 
     return (
       <div className={styles.container}>
+              <button className={styles.card} style={{fontSize: '1rem', backgroundColor: '#141e24'}}>
+                  <c>connect wallet</c>
+              </button>
         <div className={styles.main}>
               <h1 className={styles.title}>
               <c>spacerz</c>
@@ -48,10 +51,10 @@ export default function Home() {
               <div className={styles.GameArea}>
               <Game/>
           </div>
-        </div>
           <footer className={styles.footer}>
-            <a className={styles.footer}>designed in 🇮🇱, 🇨🇴 and 🇺🇸</a>      
+            <a>designed in 🇮🇱, 🇨🇴 and 🇺🇸</a>      
         </footer>
+        </div>
       </div>
     );
 }

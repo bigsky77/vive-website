@@ -4,8 +4,7 @@
 }
 
 .main {
-  min-height: 100vh;
-  padding: 2rem 0;
+  padding: 1rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -17,22 +16,25 @@
 .footer {
   display: flex;
   flex: 1;
-  border-top: 1.5px solid; 
   justify-content: center;
   align-items: center;
   color: #CD955C;
+  height: 35vh;
 }
 
 .footer a {
   display: flex;
+  position: absolute;
   justify-content: center;
+  border-top: 1px solid #CD955C; 
   align-items: center;
   flex-grow: 1;
   font-family: "NeueMachine-light";
   padding-left: 20rem 0;
   padding-right: 20rem 0;
   padding: 1rem;
-  border-top: 2.5px solid;
+  margin-top: 20rem;
+  width: 1000vh;
 }
 
 .title a {
@@ -147,6 +149,12 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
+}
+
+.card c {
+  border-radius: 5px;
+  width: 2rem;
+  top: 10px;
 }
 
 .logo {

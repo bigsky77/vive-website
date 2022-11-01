@@ -58,11 +58,11 @@ export default function Home() {
           </a>
 
         </div>
-      </main>
 
       <footer className={styles.footer}>
-      <a className={styles.footer}>designed in 🇮🇱, 🇨🇴 and 🇺🇸</a>      
+        <a>designed in 🇮🇱, 🇨🇴 and 🇺🇸</a>      
       </footer>
+      </main>
     </div>
   )
 }
