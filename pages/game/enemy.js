@@ -15,7 +15,7 @@ const Enemy = (props) => {
 
     const intervalId = setInterval(() => {
       move();    
-    }, 10);
+    }, 100);
         return () => clearInterval(intervalId);
 
 

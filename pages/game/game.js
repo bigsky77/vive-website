@@ -58,6 +58,8 @@ const Game = (props) => {
     return (
         <div>
           <Enemy playerX={player.x} playerY={player.y} gameOver={gameOver}/>
+          <Enemy playerX={player.x} playerY={player.y} gameOver={gameOver}/>
+          <Enemy playerX={player.x} playerY={player.y} gameOver={gameOver}/>
           {fillStars()}
           <Player updatePlayer={updatePlayer}/>
           <div className={styles.block} style={{top: 300 + 'px', left: 700 + 'px'}}>🌌</div>
