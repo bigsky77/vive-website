@@ -40,8 +40,10 @@ export default function Home() {
               <h1 className={styles.title}>
                     <a>spacerz</a>
                   </h1>
-                    <div className={styles.GameArea}>
+              <div className={styles.GameArea}>
+              <div className={styles.backgroundImage}>
                 <LoadGame/>
+              </div>
               </div>
           </main>
 
