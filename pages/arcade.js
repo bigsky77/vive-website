@@ -33,10 +33,12 @@ export default function Home() {
       <div className={styles.container}>    
           
           <main className={styles.main}>
-              <button className={styles.connect} style={{fontSize: '1rem', backgroundColor: '#141e24'}} onClick={connectMetamask}>
-                connect wallet
-              </button>
-         
+              <div className={styles.verticalAlign}>
+                <button className={styles.connect} style={{fontSize: '1rem', backgroundColor: '#141e24'}} onClick={connectMetamask}>
+                  connect wallet
+                </button>
+              </div>
+
               <h1 className={styles.title}>
                     <a>spacerz</a>
                   </h1>

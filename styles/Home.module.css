@@ -344,7 +344,13 @@
   text-align: center;
 }
 
-
+.verticalAlign {
+  text-align: center;
+  justify-content: vertical;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
 
 
 

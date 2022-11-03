@@ -32,11 +32,11 @@ const Game = (props) => {
     if(endGame == true){
       return (
         <div>
-        <h1 className={styles.description}>Game Over</h1>
             <div className={styles.description}>
-              <Image src={photo46} height={350} width={250}/>
+              <h1 className={styles.description}>Game Over</h1>
+                <Image src={photo46} height={350} width={250}/>
+              <p className={styles.description}>score={score}</p>
             </div>
-          <p className={styles.description}>score={score}</p>
        </div>
       );
     }

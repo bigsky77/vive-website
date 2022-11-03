@@ -28,12 +28,15 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a className={styles.card}>
+        
+        <Link href='./notes'>
+        <a className={styles.card}>
             <Image src={photo38} height={700}
          width={500}/>
           <p>technology</p>
           </a>
-         
+        </Link>     
+
          <Link href={`./posts/${ref}`}>
           <a href='posts/${ref}' className={styles.card}>
             <Image src={photo36} height={700}
@@ -46,7 +49,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-      <a>🫡</a>
+        <a>designed in 🇮🇱, 🇨🇴 and 🇺🇸</a>      
       </footer>
     </div>
   )

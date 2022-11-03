@@ -34,6 +34,9 @@ export default function Home({ allPostsData }) {
         </ul>
       </div>
     </div>
-  </div>
+    <footer className={styles.footer}>
+        <a>designed in 🇮🇱, 🇨🇴 and 🇺🇸</a>      
+      </footer>
+    </div>
   );
 }

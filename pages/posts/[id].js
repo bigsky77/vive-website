@@ -28,6 +28,9 @@ export default function Post({ postData }) {
         </h1>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </div>
+        <footer className={styles.footer}>
+          <a>designed in 🇮🇱, 🇨🇴 and 🇺🇸</a>      
+      </footer>
     </div>
   );
 }

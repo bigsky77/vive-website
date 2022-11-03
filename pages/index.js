@@ -9,6 +9,7 @@ import photo3 from "../public/photo3.jpg"
 import Header from "../public/header.js"
 import Notes from "./notes.js"
 import Writing from "./writing.js"
+import Gallery from "./gallery/gallery.js";
 
 export default function Home() {
   return (
@@ -36,18 +37,18 @@ export default function Home() {
 
         <div className={styles.grid}>
         
-        <Link href="https://github.com/bigsky77">
+        <Link href="/arcade">
         <a className={styles.card}>
             <Image src={photo35} height={700}
          width={500}/>
-          <p>software</p>
+          <p>arcade</p>
           </a>
         </Link>
          
-         <Link href="/arcade">
+         <Link href="/writing">
           <a className={styles.card}>
             <Header/>
-            <p>arcade</p>
+            <p>writing</p>
           </a>
          </Link>
 
