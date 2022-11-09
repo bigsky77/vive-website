@@ -17,12 +17,14 @@ export default function Home({ allPostsData }) {
   <div className={styles.container}>
    <div className={styles.main}>
      <h1 className={styles.title}>
-        <b>technology</b>
+        <a>technology</a>
      </h1>
-      <div>
+      <div className={styles.bloglist}>
         <ul>
           {allPostsData.map(({ id, date, title }, index) => (
-            <li key={index}>
+            <li key={index} className={styles.list}>
+                <a className={styles.date}>{date}</a>
+                <br/>
               <Link href={`./posts/${id}`}>
                 <a className={styles.description}>{title}</a>
               </Link>

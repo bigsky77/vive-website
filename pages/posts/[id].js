@@ -23,7 +23,7 @@ export default function Post({ postData }) {
   return (
     <div className={styles.container}>
       <div className={styles.blog}>
-        <h1 className={styles.title}>
+        <h1 className={styles.title} style={{lineHeight: '0.5'}}>
          <b>{postData.title}</b>
         </h1>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
