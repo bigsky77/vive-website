@@ -31,7 +31,7 @@ export default function Home() {
               <b>legendary technology for a limitless future</b>
             </p>
           <div className={styles.grid}>
-           <Link href="/arcade">
+           <Link href="">
               <a className={styles.card}>
                 <Image src={photo35} height={700} width={500}/>
               <p>arcade</p>
