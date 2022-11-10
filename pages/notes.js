@@ -15,10 +15,10 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
   <div className={styles.container}>
-   <div className={styles.main}>
+   <main className={styles.main}>
      <h1 className={styles.title}>
         <a>technology</a>
-       </h1>
+        </h1>
          <div className={styles.bloglist}>
            <ul>
             {allPostsData.map(({ id, date, title }, index) => (
@@ -35,9 +35,9 @@ export default function Home({ allPostsData }) {
               ))}
             </ul>
           </div>
-        </div>
+        </main>
       <footer className={styles.footer}>
-        <a>designed in 🇮🇱, 🇨🇴 and 🇺🇸</a>      
+        <b>designed in 🇮🇱, 🇨🇴 and 🇺🇸</b>      
       </footer>
     </div>
   );

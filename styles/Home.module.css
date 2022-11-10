@@ -37,6 +37,21 @@
   bottom: 0px;
 }
 
+.footer b {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  border-top: 2px solid #CD955C; 
+  align-items: center;
+  font-family: "NeueMachine-light";
+  padding-left: 20rem 0;
+  padding-right: 20rem 0;
+  padding: 1rem;
+  width: 100%;
+  bottom: 0px;
+
+}
+
 .title a {
   color: #CD5C5C;
   text-decoration: none;
@@ -269,6 +284,19 @@
     padding: 1rem;
   }
 
+  .footer b {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    border-top: 1px solid #CD955C; 
+    align-items: center;
+    flex-grow: 1;
+    font-family: "NeueMachine-light";
+    padding-left: 20rem 0;
+    padding-right: 20rem 0;
+    padding: 1rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
