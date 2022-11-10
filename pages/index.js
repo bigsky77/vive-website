@@ -28,9 +28,7 @@ export default function Home() {
             <a>BigSky</a>
           </h1>
             <p className={styles.description}>
-              <b>legendary technology</b>
-              <br></br>
-              <b>for a limitless future</b>
+              <b>legendary technology for a limitless future</b>
             </p>
           <div className={styles.grid}>
            <Link href="/arcade">

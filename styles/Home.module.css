@@ -201,6 +201,7 @@
   .container {
      padding: 0 2rem;
      background-color: #141e24;
+     min-height: 100vh;
      height: auto;
   }
 
@@ -239,6 +240,7 @@
   .blog {
     box-sizing: border-box;
     width: 99%;
+    min-height: 100vh;
 		min-width: 200px;
 		max-width: 980px;
 		margin: 0 auto;
