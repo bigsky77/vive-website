@@ -59,7 +59,7 @@ const Blocks = (props) => {
 
  return (
     <div>
-      <div className={styles.block} style={{top: blockY + 'px', left: blockX + 'px'}}>{type[emoji]}</div>
+      <div className={styles.block} style={{top: blockY + 'px', left: blockX + 'px'}}>{type[2]}</div>
     </div>
   );
 }
