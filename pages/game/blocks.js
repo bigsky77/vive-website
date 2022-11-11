@@ -41,22 +41,19 @@ const Blocks = (props) => {
         blockY == props.player.y &&
         emoji == 0
       ){
-        let z = props.score
-        props.endGame(z);
+        props.endGame(props.score);
       } else if(
         blockX == props.player.x && 
         blockY == props.player.y &&
         emoji == 1
       ){
-        let y = props.score + 5
-        props.updateScore(y)
+        props.updateScore(props.score + 5)
       } else if(
         blockX == props.player.x && 
         blockY == props.player.y &&
         emoji == 2
       ){
-        let x = props.score + 10
-        props.updateScore(x)
+        props.updateScore(props.score + 10)
       }
     }
 
