@@ -9,7 +9,6 @@ import photo3 from "../public/photo3.jpg"
 import Header from "../public/header.js"
 import Notes from "./notes.js"
 import Writing from "./writing.js"
-import Gallery from "./gallery/gallery.js";
 
 export default function Home() {
   return (
@@ -31,10 +30,10 @@ export default function Home() {
               <b>legendary technology for a limitless future</b>
             </p>
           <div className={styles.grid}>
-           <Link href="/arcade">
+           <Link href="https://github.com/bigsky77">
               <a className={styles.card}>
                 <Image src={photo35} height={700} width={500}/>
-              <p>arcade</p>
+              <p>dev</p>
               </a>
            </Link>
            <Link href="/writing">

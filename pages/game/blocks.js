@@ -13,7 +13,6 @@ const Blocks = (props) => {
   let [emoji, updateEmoji] = useState(0);
   let score = 0;
   let rangeX = [0, 100, 200];
-  let type = ['💀', '🏆', '⭐️', ' ']
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -59,7 +58,7 @@ const Blocks = (props) => {
 
  return (
     <div>
-      <div className={styles.block} style={{top: blockY + 'px', left: blockX + 'px'}}>{type[2]}</div>
+      <div className={styles.block} style={{top: blockY + 'px', left: blockX + 'px'}}>⭐️</div>
     </div>
   );
 }
