@@ -7,7 +7,7 @@ import photo38 from "../public/photo38.jpg"
 import Header from "../public/header.js"
 import Notes from "./notes.js"
 
-const ref = 'refrences';
+const ref = 'reference';
 
 export default function Home() {
   return (
@@ -41,7 +41,7 @@ export default function Home() {
           <a href='posts/${ref}' className={styles.card}>
             <Image src={photo36} height={700}
          width={500}/>
-            <p>references</p>
+            <p>reference</p>
           </a>
          </Link>
 

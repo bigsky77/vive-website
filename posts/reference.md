@@ -1,8 +1,6 @@
 ---
-title: References 
+title: Reference 
 date: 11-11-22
-id: ref
-      home
 ---
 ==========================================================
 
