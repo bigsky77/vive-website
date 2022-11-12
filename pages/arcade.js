@@ -2,9 +2,9 @@ import styles from '../styles/Home.module.css'
 import {ethers} from 'ethers'
 import { StrictMode, useRef, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-import Game from "./game/game.js";
-import LoadGame from "./game/loadgame.js";
-import Player from "./game/player.js";
+import Game from "./lib/game/game.js";
+import LoadGame from "./lib/game/loadgame.js";
+import Player from "./lib/game/player.js";
 
 export default function Home() {  
   const [result, showResult] = useState(false);
