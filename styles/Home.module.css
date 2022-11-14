@@ -429,5 +429,10 @@
   list-style-type: none;
 }
 
-
-
+.presentation {
+   position: absolute;
+   bottom: 250px;
+   left: 500px;
+   width: 800px; 
+   height: 550px; 
+}

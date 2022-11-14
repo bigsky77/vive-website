@@ -6,6 +6,7 @@ import photo36 from "../public/photo36.jpg"
 import photo38 from "../public/photo38.jpg"
 import Header from "../public/header.js"
 import Notes from "./notes.js"
+import JMT from "../public/jmt.jpg"
 
 const ref = 'reference';
 
@@ -24,23 +25,25 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-        an offensive and defensive weapon against the enemy
+        <b>an offensive and defensive 
+        <br></br>
+        weapon against the enemy</b>
         </p>
 
         <div className={styles.grid}>
         
-        <Link href=''>
+        <Link href='/notes'>
         <a className={styles.card}>
-            <Image src={photo38} height={700}
-         width={500}/>
-          <p>technology</p>
+            <Image src={photo38} height={300}
+         width={200}/>
+          <p>writing</p>
           </a>
         </Link>     
-
-         <Link href={`./posts/${ref}`}>
+       
+        <Link href={`./posts/${ref}`}>
           <a href='posts/${ref}' className={styles.card}>
-            <Image src={photo36} height={700}
-         width={500}/>
+            <Image src={photo36} height={300}
+         width={200}/>
             <p>reference</p>
           </a>
          </Link>
@@ -48,7 +51,7 @@ export default function Home() {
          </div>
       </main>
 
-      <footer className={styles.footer}>
+     <footer className={styles.footer}>
         <a>designed in 🇮🇱, 🇨🇴 and 🇺🇸</a>      
       </footer>
     </div>
