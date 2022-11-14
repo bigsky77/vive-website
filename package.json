@@ -24,6 +24,7 @@
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
     "unified": "^10.1.2",
+    "vercel": "^28.4.17",
     "web3-react": "^5.0.5"
   },
   "devDependencies": {
