@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.11",
+    "@vercel/analytics": "^0.1.4",
     "ethers": "^5.7.2",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
