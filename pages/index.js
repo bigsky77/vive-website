@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { inject } from '@vercel/analytics';
 import Link from "next/link";
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -11,6 +12,7 @@ import Notes from "./notes.js"
 import Writing from "./writing.js"
 
 export default function Home() {
+  inject();
   return (
     <div className={styles.container}>
       <Head>
