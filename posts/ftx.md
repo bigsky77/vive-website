@@ -2,7 +2,6 @@
 title: FTX 
 date: 11-14-22
 ---
-=======================================================
 
 The FTX scandal helped me see many industry dynamics.  Most importantly the power of scrolling algorithms came into extremely clear relief. I work in crypto, and have worked in this industry exclusively over the past three years. I write lots of code, and have rebuilt several large smart-contract code bases in different languages.  However, the amount of time I spend actually interacting with the block-chain is dwarfed by the amount of time I spend scrolling and liking.
 

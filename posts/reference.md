@@ -2,7 +2,6 @@
 title: References 
 date: 11-11-22
 ---
-==========================================================
 
 ## Math
 1. [Deconstructing Bezier Curves](http://blog.pkh.me/p/33-deconstructing-be%CC%81zier-curves.html)  

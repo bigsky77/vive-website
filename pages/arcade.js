@@ -1,4 +1,5 @@
 import styles from '../styles/Home.module.css'
+import Footer from "./footer/footer.js"
 import {ethers} from 'ethers'
 import { StrictMode, useRef, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
@@ -48,10 +49,7 @@ export default function Home() {
               </div>
               </div>
           </main>
-
-          <footer className={styles.footer}>
-            <a>designed in 🇮🇱, 🇨🇴 and 🇺🇸</a>      
-          </footer>
+        <Footer/>
       </div>
     );
 }

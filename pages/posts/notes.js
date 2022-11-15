@@ -1,7 +1,8 @@
-import styles from '../styles/Home.module.css'
-import { getSortedPostsData } from "../lib/posts";
+import styles from '../../styles/Home.module.css'
+import { getSortedPostsData } from "../../lib/posts";
 import Link from "next/link";
-import Layout from '../styles/layout'
+import Layout from '../../styles/layout'
+import Footer from "../footer/footer.js"
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -25,7 +26,7 @@ export default function Home({ allPostsData }) {
                <li key={index} className={styles.list}>
                   <a className={styles.date}>{date}</a>
                   <br/>
-                    <Link href={`./posts/${id}`}>
+                    <Link href={`${id}`}>
                       <a className={styles.description}>{title}</a>
                     </Link>
                   <br/>
@@ -36,9 +37,7 @@ export default function Home({ allPostsData }) {
             </ul>
           </div>
         </main>
-      <footer className={styles.footer}>
-        <b>designed in 🇮🇱, 🇨🇴 and 🇺🇸</b>      
-      </footer>
+       <Footer/>
     </div>
   );
 }

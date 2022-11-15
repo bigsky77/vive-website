@@ -1,4 +1,5 @@
 import Layout from '../../styles/layout'
+import Footer from "../footer/footer.js"
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import styles from '../../styles/Home.module.css'
 
@@ -23,14 +24,14 @@ export default function Post({ postData }) {
   return (
     <div className={styles.container}>
       <div className={styles.blog}>
-        <h1 className={styles.title} style={{lineHeight: '0.5'}}>
+        <h1 className={styles.title} style={{lineHeight: '0.1'}}>
          <b>{postData.title}</b>
+         <br></br>
+         <b>===============================</b>
         </h1>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </div>
-        <footer className={styles.footer}>
-          <a>designed in 🇮🇱, 🇨🇴 and 🇺🇸</a>      
-      </footer>
+      <Footer/>
     </div>
   );
 }

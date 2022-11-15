@@ -6,9 +6,11 @@ import photo35 from "../public/photo35.jpg"
 import photo42 from "../public/photo42.png"
 import photo43 from "../public/photo43.jpg"
 import photo3 from "../public/photo3.jpg"
+import Sphynx from "../public/sphynx.jpg"
 import Header from "../public/header.js"
-import Notes from "./notes.js"
-import Writing from "./writing.js"
+import Footer from "./footer/footer.js"
+import Notes from "./posts/notes.js"
+import Writing from "./posts/writing.js"
 
 export default function Home() {
   return (
@@ -30,13 +32,13 @@ export default function Home() {
               <b>legendary technology for a limitless future</b>
             </p>
           <div className={styles.grid}>
-           <Link href="https://github.com/bigsky77">
+           <Link href="/arcade">
               <a className={styles.card}>
                 <Image src={photo35} height={700} width={500}/>
-              <p>software</p>
+              <p>arcade</p>
               </a>
            </Link>
-           <Link href="/writing">
+           <Link href="posts/writing">
               <a className={styles.card}>
                 <Header/>
               <p>writing</p>
@@ -48,9 +50,9 @@ export default function Home() {
             </a>
           </div>
         </main>
-        <footer className={styles.footer}>
-          <a>designed in 🇮🇱, 🇨🇴 and 🇺🇸</a>      
-        </footer>
+        <Footer/> 
     </div>
   )
 }
+
+

@@ -1,12 +1,13 @@
 import Link from "next/link";
+import Footer from "../footer/footer.js"
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import photo36 from "../public/photo36.jpg"
-import photo38 from "../public/photo38.jpg"
-import Header from "../public/header.js"
+import styles from '../../styles/Home.module.css'
+import photo36 from "../../public/photo36.jpg"
+import photo38 from "../../public/photo38.jpg"
+import Header from "../../public/header.js"
 import Notes from "./notes.js"
-import JMT from "../public/jmt.jpg"
+import JMT from "../../public/jmt.jpg"
 
 const ref = 'reference';
 
@@ -32,7 +33,7 @@ export default function Home() {
 
         <div className={styles.grid}>
         
-        <Link href='/notes'>
+        <Link href='notes'>
         <a className={styles.card}>
             <Image src={photo38} height={300}
          width={200}/>
@@ -40,8 +41,8 @@ export default function Home() {
           </a>
         </Link>     
        
-        <Link href={`./posts/${ref}`}>
-          <a href='posts/${ref}' className={styles.card}>
+        <Link href={`${ref}`}>
+          <a href='${ref}' className={styles.card}>
             <Image src={photo36} height={300}
          width={200}/>
             <p>reference</p>
@@ -51,9 +52,7 @@ export default function Home() {
          </div>
       </main>
 
-     <footer className={styles.footer}>
-        <a>designed in 🇮🇱, 🇨🇴 and 🇺🇸</a>      
-      </footer>
+     <Footer/>
     </div>
   )
 }

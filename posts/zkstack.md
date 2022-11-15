@@ -2,7 +2,6 @@
 title: The Zero-Knowledge Computer Stack  
 date: 11-04-22
 ---
-======================================================================
 
 This is an outline of the computer stack used with zero-knowledge computing. Over the next decade, ZK systems will grow more and more prominient for scaling blockchain applications.  Becuase of the high-computational overhead for these systems, every level across the stack will need to be highly optimized.  In fact, much of the computing power that currently powers POW systems may soon transition to powering ZK proving systems.  
 
